@@ -1,0 +1,128 @@
+@charset "UTF-8";
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body, html {
+    background-color: #0033A0;
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    height: 100vh;
+    position: relative;
+    width: 100vw;
+}
+section#login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow:  hidden;
+    background-color: #ffd900b7;
+    width: 250px;
+    height: 515px;
+    border-radius: 20px;
+    box-shadow:  0px 0px 10px rgba(0, 0, 0, 0.582);
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
+}
+
+section#login > div#imagem{
+    display: block;
+    background: url(/imagens/x-men-evolution[1].jpg)  no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 200px;
+}
+
+section#login> div#formulario {
+    padding: 10px;
+    display: block;
+}
+
+div#formulario > h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div#formulario > p {
+    font-size: 10px;
+}
+form > div.campo{
+    background-color: #0033A0;
+    border: 2px solid #0033A0 ;
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    margin: 5px 0px ;
+}
+div.campo  > label {
+    display: none;
+}
+div.campo > i{
+    color: white;
+
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+    
+}
+div.campo > input{
+    background-color:#0756ff ;
+    font-size: 1em;
+    height: 100%;
+    border-radius: 8px;
+    border: 0px;
+    padding: 4px;
+    width: calc(100% - 44px);
+    transform: translateY(-41px);
+    margin-left: 40px;
+}
+div.campo > input:focus-within{
+    background-color: white;
+    
+}
+
+form > input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: #003096;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+form > input[type=submit]:hover{
+    background-color: rgb(11, 105, 230);
+}
+
+form > a.botao{
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: #0051ff;
+    border: 1px solid  #5080e7;
+    border-radius: 5px;
+    text-decoration: none;
+    padding-top: 5px;
+    margin-top: 5px;
+    color: white;
+}
+
+form > a.botao:hover{
+    background-color: #1a63ff;
+}
+form > a.botao > i {
+    font-size: 0.8em;
+}
